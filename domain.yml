@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - solicitarTarjeta
+  - solicitarDatos
+  - consultaResumen
+  - precioDolar
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_solicitarTarjeta :
+  - text : "¿Ya sos cliente del banco?"
+
+  utter_solicitarDatos:
+  - text : "Vamos a necesitar tus datos, por favor rellene el siguiente formulario: 
+            https://docs.google.com/forms/d/e/1FAIpQLScawKJnRsuP3C51Q5aGH2BD8VNN1yQVJGCDUZ67hQANbzYhMA/viewform"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
